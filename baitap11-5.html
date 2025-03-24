@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let weight = +(prompt(` Moi nhap can nang (don vi kg)`));
+        // let height = +(prompt(` Moi nhap chieu cao (don vi m)`));
+        // let BMI = +(weight)/((height)*(height));
+        // if(BMI < 18.5) {
+        //     alert(`The trang ban gay`);
+        // }
+        // if(18.5 <= BMI <=24.9){
+        //      alert( `The trang cua ban binh thuong`);
+        // }else{
+        // }
+        // if(25 <= BMI <= 29.9){
+        //     alert(`Ban bi thua can (Tien beo phi)`);
+        // }else{
+        // }
+        // if(30 <= BMI <= 34.9){
+        //     alert(`Ban bi thua can (Beo phi do I)`);
+        // }else{
+        // }
+        // if(35 <= BMI <= 39.9) {
+        //     alert(`Ban bi thua can (Beo phi do II)`);
+        // }else{
+        // }
+        // if(BMI >=40) {
+        //     alert(` Ban bi thua can (Beo Phi do III)`);
+        // }else{
+        // }
+        let weight = +(prompt(` Moi nhap can nang (don vi kg)`));
+        let height = +(prompt(` Moi nhap chieu cao (don vi m)`));
+        let BMI = +(weight)/((height)*(height));
+        if(BMI < 18.5) {
+            alert(`The trang ban gay`);
+        }
+        else if(18.5 <= BMI && BMI <=24.9){
+             alert( `The trang cua ban binh thuong`);
+        }
+        else if(25 <= BMI && BMI <= 29.9){
+            alert(`Ban bi thua can (Tien beo phi)`);
+        }
+        else if(30 <= BMI && BMI<= 34.9){
+            alert(`Ban bi thua can (Beo phi do I)`);
+        }
+        else if(35 <= BMI && BMI <= 39.9) {
+            alert(`Ban bi thua can (Beo phi do II)`);
+        }
+        else {
+            alert(` Ban bi thua can (Beo Phi do III)`);
+        }
+    </script>
+</body>
+</html>
