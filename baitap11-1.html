@@ -18,28 +18,9 @@
 
 
     <script>
-    // let year = +(prompt("Nhap vao nam ban muon kiem tra:"));
-    //     if(year % 4 === 0 && year % 100 !== 0){
-    //         alert(`${year} la nam nhuan`)
-    //     }
-    //      if( year % 100 === 0 && year % 400 === 0){
-    //          alert(` ${year} la nam nhuan`)
-    //     }
-    //     if( year % 100 === 0 && year % 400 !== 0){
-    //         alert(` ${year} khong phai la nam nhuan`)
-    //     }  else{
-    //      alert(` ${year} khong phai la nam nhuan`)
-    //     }
-    //     
     let year = +(prompt("Nhap vao nam ban muon kiem tra:"));
-    if({year} % 4 === 0 && {year} % 100 !== 0){
+    if(year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0)){
         alert(`${year} la nam nhuan`);
-    }
-    if( {year} % 100 === 0 && {year} % 400 === 0){
-         alert(` ${year} la nam nhuan`);
-        }
-    if( {year} % 100 === 0 && {year} % 400 !== 0){
-        alert(` ${year} khong phai la nam nhuan`)
      } else{
             alert(" Day khong phai nam nhuan");
         }
