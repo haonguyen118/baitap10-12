@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <thead></thead>
+        <th>STT</th>
+        <th>Ten</th>
+        <th>Diem kiem tra</th>
+        <th>Diem kiem tra giua ky</th>
+        <th>Diem kiem tra Cuoi ky</th>
+        <th>Danh gia hoc luc</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Nguyen Van A</td>
+                <td ></td>
+                <td ></td>
+                <td></td>
+                <td></td>
+
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Nguyen Van B</td>
+                <td ></td>
+                <td ></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Nguyen Van C</td>
+                <td ></td>
+                <td ></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Nguyen Van D</td>
+                <td ></td>
+                <td ></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+
+    </table>
+    <script>
+        let name = (prompt(` Moi nhap ten sinh vien:`));
+        let point1 = +(prompt(` Moi nhap diem kiem tra giua ky:`));
+        let point2 = +(prompt(` Moi nhap diem kiem tra giua ky:`));
+        let point3 = +(prompt(` Moi nhap diem kiem tra cuoi ky:`));
+        let average = (point1 + point2 + point3)/3
+        if( average >= 8.0){
+            alert(`${name} co diem trung binh ${average} la hoc sinh gioi`);
+        }
+        else if(average < 8.0 && average >= 7.0){
+            alert(`${name} co diem trung binh ${average} la hoc sinh kha`);
+        }
+        else if(average < 7.0 && average >= 5.0){
+            alert(`${name} co diem trung binh ${average} la hoc sinh trung binh`);
+        }
+        else if(average < 5.0 ){
+            alert(`${name} co diem trung binh ${average} la hoc sinh yeu`);
+        }
+        </script>
+</body>
+</body>
+</html>

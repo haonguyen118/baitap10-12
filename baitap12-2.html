@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+   
+    <script>
+        //  bai 1
+        let Cel = +(prompt(` Moi nhap gia tri do C muon chuyen doi`));
+        let fah= (Cel*9/5 + 32);
+        alert(`Gia tri do F sau khi quy doi la ${fah} do F`);
+
+        // bai 2
+        let meter = +(prompt(` Moi nhap so m can chuyen doi`))
+        let feet = (meter * 3.280839895);
+        alert(` Gia tri sau chuyen doi la: ${feet} ft`);
+
+        // bai 3
+        let a = +(prompt(` Moi nhap vao chieu dai canh a`));
+        let acreage = (a*a)
+        alert(`Dien tich cua hinh vuong la ${acreage} m2`);
+
+        //  bai 4
+        let b = +(prompt(` Moi nhap chieu dai cua hcn`));
+        let c = +(prompt(` Moi nhap chieu rong cua hcn`));
+        let acr = (b*c);
+        alert(`Dien tich cua hcn la: ${acr}`);
+
+        // bai 5
+        let a1 = +(prompt(` Moi nhap chieu dai cua canh hinh tam giac`));
+        let b1 = +(prompt(` Moi nhap chieu dai cua canh hinh tam giac`));
+        let acr1 = (a1*b1/2);
+        alert(`Dien tinh tam giac vuong la: ${acr1}`);
+
+        // bai 6 phuong trinh bac 1: dx　+ e = 0
+        let d = +(prompt(` Moi nhap gia tri d bat ky`));
+        let e = +(prompt(` Moi nhap gia tri e bat ky`));
+        if(d === 0){
+            if( e === 0){
+                alert(`Phuong trinh co vo so nghiem`);
+            }
+            else{
+                alert(`Phuong trinh vo nghiem`);
+            }
+        }
+        else if( d !== 0){
+            alert( `nghiem cua phuong trinh bang: x = ${-(d/e)}`)
+        }
+        
+        // bai 7: phuong trinh bac 2  :fx2 +gx + h = 0   
+       
+        // bai 8
+        let age = +(prompt(` Moi nhap gia tri so tuoi bat ky`));
+       if(parseInt(age)){       
+            if(age > 0 || age <= 120){
+            alert(`Day la so tuoi cua mot nguoi`);
+            }else{
+            alert(`Day khong phai la so tuoi cua mot nguoi`);
+        }
+        }else{
+            alert(`Day khong phai la so tuoi cua mot nguoi`);   
+        }
+    </script>
+    
+</body>
+</html>

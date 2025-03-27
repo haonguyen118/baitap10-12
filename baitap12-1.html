@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+   
+    
+    <script>
+        let a = +(prompt(` Moi ban nhap vao so a:`));
+    let b = +(prompt(` Moi ban nhap vao so b:`));
+    if (a % b === 0) {
+        alert(`${a} chia het cho ${b}`);
+    } else {
+        alert(`so ${a} khong chia het cho so ${b}`);
+    }
+   
+    let age = +(prompt(` Moi nhap vao so tuoi cua ban:`));
+    if( age < 16){
+        alert( ` Ban chua du tuoi vao lop 10`);
+    }else{
+        alert(`Ban da du tuoi vao lop 10`);
+    }
+    // bai 2
+    let i = +(prompt(` Moi nhap vao mot so nguyen bat ky:`));
+    if(i <= 0){
+        document.writeln(`So ${i} la mot so co gia tri nho hon hoac bang 0`);
+    }
+    else{
+        document.writeln(`So ${i} la mot so co gia tri lon hon 0`);
+   
+    }
+    // bai 4
+    let number1 = +(prompt(` Moi nhap mot so bat ky`));
+    let number2 = +(prompt(` Moi nhap mot so bat ky`));
+    let number3 = +(prompt(` Moi nhap mot so bat ky`));
+    if(number1 > number2 && number1 > number3){
+        alert(`Number ${number1} là số lớn nhất`)
+    } else {
+        if(number2 > number3){
+            alert(`Number ${number2} là số lớn nhất`)
+        }else {
+            alert(`Number ${number3} là số lớn nhất`)
+        }
+    }
+    // bai 5
+
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="text">Choi game doan so</p>
+    <button onclick="playGame()">click</button>
+    
+    <script>
+function playGame(){
+    let start = +(prompt(`Moi nhap so bat dau:`));
+    let end = +(prompt(`Moi nhap so ket thuc:`));
+    let spaceBetween = end - start;
+    let randomNumber = Math.floor(Math.random() * spaceBetween + start);
+    console.log(randomNumber)
+        while(true){
+            let choice = +(prompt(`Moi nhap so trong khoang ${start} den ${end}:`));
+            if(choice> randomNumber){
+                alert(`so ban chon lon hon so ngau nhien`);
+        }else if(choice < randomNumber){
+            alert(`so ban chon nho hon so ngau nhien`);
+        }else{
+            alert(`Chuc  mung ban da doan dung`);
+            break;
+        }
+    }
+}
+
+    </script>
+</body>
+</html>
