@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            let name = "";
+            let age = "";
+            while(true){
+                alert(`
+            Lựa chọn 1: Nhập tên của người dùng.
+            Lựa chọn 2: Nhập tuổi của người dùng.
+            Lựa chọn 3: In tên và tuổi của người dùng.
+            Lựa chọn 4: In bảng cửu chương của một số.
+            Lựa chọn 5: Kiểm tra số nhập vào là số chẵn hay lẻ.
+            Lựa chọn 6: Tính tổng các số từ 1 đến N (N do người dùng nhập).
+            Lựa chọn 7: In các số trong một dãy (người dùng nhập dãy số).
+            Lựa chọn 8: Kiểm tra số nhập vào có phải là số nguyên tố hay không.
+            Lựa chọn 9: In chuỗi đảo ngược của một chuỗi mà người dùng nhập.
+            Lựa chọn 10: Thoát khỏi chương trình.`)
+            let choice = +(prompt(`Moi nhap vao lua chon cua ban:`));
+            
+                if(choice == 1){
+                     name = prompt(`Moi nhap ten ban:`);
+                        
+                }
+                else if(choice == 2){
+                     age = prompt(`Moi nhap ten ban:`);
+                }
+                else if(choice == 3){
+                    alert(`Ten ban la: ${name};
+                            tuoi cua ban la: ${age}`);
+                }
+                else if(choice == 4){
+                    let input = (prompt(`Moi nhap vao so bat ky tu 1 den 10:`));
+                    for(let i = 1; i<=10; i++){
+                        
+                       console.log(`${input} x ${i} = ${input*i} `);
+                      alert(`${input} x ${i} = ${input*i} `);
+                    }
+                }
+                     else if(choice == 5) {
+                    let a = (prompt(`Moi nhap vao so bat ky muon kiem tra:`));
+                        if (a % 2 ===0){
+                        alert(` so ban nhap vao la so chan`);
+                        } else{
+                        alert(` so ban nhap vao la so le`);
+                    }
+                } 
+                else if(choice == 6){
+                    let input = +(prompt( `Moi nhap so bat ky`));
+                    let sum = 0;
+                    for(let i = 1; i<= input; i++){
+                        sum += i;
+                        
+                    }
+                    alert(`Tong tu 1 den ${input} bang: ${sum}`);
+                }
+                else if(choice == 7){
+                    let c = +(prompt( `Moi nhap day so bat ky`));
+                    alert(`Day so ban vua nhap la:${c}`);
+                }
+                else if(choice == 8){
+                    let d = +(prompt( `Moi nhap  so bat ky`));
+                     let isPrime = true;
+                   for(let i = 2; i < d; i++){
+                        if(d % i === 0){
+                         isPrime = false;
+                         break;   
+                        }                        
+                   }
+                   if(isPrime == true){
+                    alert(` Day la so nguyen to`);
+                   }else {
+                    alert(` Day khong phai la so nguyen to`);
+                   }
+                }
+                else if(choice == 9){
+                let e = prompt("Mời nhập vào 1 dãy số cách nhau bởi dấu phẩy : ");
+                 let arr = e.split(",")
+                alert(arr);
+                alert(arr.reverse());
+                }
+                else if(choice == 10){
+                    break;
+                }
+
+            }
+    </script>
+</body>
+</html>
